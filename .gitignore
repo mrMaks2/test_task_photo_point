@@ -381,7 +381,3 @@ pyrightconfig.json
 static/
 redis-data/
 redis.conf/
-
-# Файлы миграций (исключая только __init__.py)
-*/migrations/*.py
-!*/migrations/__init__.py

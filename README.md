@@ -48,7 +48,13 @@
     docker-compose exec web python manage.py createsuperuser
     ```
 
-7.  **Проверка работоспособности:**
+7.  **Проведение тестов:**
+
+    ```bash
+    docker-compose exec web python manage.py test tests --verbosity=2
+    ```
+
+8.  **Проверка работоспособности:**
 
     *   **API:** http://localhost:8000/api/v1/notifications/
     *   **Админ-панель:** http://localhost:8000/admin/

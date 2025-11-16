@@ -1,4 +1,5 @@
-from rest_framework import viewsets
+# notifications/views.py
+from rest_framework import viewsets, permissions
 from rest_framework.decorators import action
 from rest_framework.response import Response
 from .models import Notification
@@ -7,6 +8,7 @@ from .tasks import send_notification_task
 
 class NotificationViewSet(viewsets.ModelViewSet):
     queryset = Notification.objects.all()
+    permission_classes = [permissions.IsAuthenticated]  # Добавляем эту строку
     
     def get_serializer_class(self):
         if self.action == 'create':
