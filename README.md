@@ -18,16 +18,16 @@
 
 1.  **Убедитесь, что у вас установлен Docker и Docker Compose.**
 
-2.  **Создайте файл .env на основе примера.**
-
-    ```bash
-    cp .env.example .env
-    ```
-
-3.  **Склонируйте репозиторий:**
+2.  **Склонируйте репозиторий:**
 
     ```bash
     git clone https://github.com/mrMaks2/test_task_photo_point.git
+    ```
+
+3.  **Создайте файл .env на основе примера.**
+
+    ```bash
+    cp .env.example .env
     ```
 
 4.  **Запустите проект с помощью команды:**
